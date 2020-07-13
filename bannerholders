@@ -1,5 +1,5 @@
 #!/bin/bash
-#create by: colider de theholders.
+#create by: colider de Theholders.
 
 figlet -f big holders                             
 
@@ -31,7 +31,8 @@ if [ "$opcion" == "$no" ]; then
 else
 
           echo "opcion incorrecta
-                 "
+                "
+exit
 fi
 
 echo "Colores en Bash"                            
