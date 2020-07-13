@@ -1,0 +1,70 @@
+#!/bin/bash
+#create by: colider de theholders.
+
+figlet -f big holders                             
+
+read -p "escriba el numero para la primera opcion
+>>> " si
+echo ""
+read -p "escriba el numero para la segunda opcion
+>>> " no
+echo "cargando..."
+sleep 2
+clear
+
+echo "
+Elija una opción:
+
+[$si] si decia apagar el script ponga '1'
+[$no] si quiere iniciar el script  ponga '2'
+"
+read -p ">>> " opcion
+
+if [ "$opcion" == "$si" ]; then
+     echo "saliendo
+        "
+fi
+
+if [ "$opcion" == "$no" ]; then
+         echo "entrar
+                "
+else
+
+          echo "opcion incorrecta
+                 "
+fi
+
+echo "Colores en Bash"                            
+sleep 2
+echo -e "\e[31mRojo\e[0m"
+echo -e "\e[1;31mRojo claro\e[0m"
+echo -e "\e[30mNegro\e[0m"
+echo -e "\e[1;30mDark Gray\e[0m"
+echo -e "\e[34mBlue\e[0m"
+echo -e "\e[1;34mLight Blue\e[0m"
+echo -e "\e[32mGreen\e[0m"
+echo -e "\e[1;32mLight Green\e[0m"
+echo -e "\e[36mCyan\e[0m"
+echo -e "\e[1;36mLight Cyan\e[0m"
+echo -e "\e[35mPurple\e[0m"
+echo -e "\e[1;35mLight Purple\e[0m"
+echo -e "\e[33mBrown\e[0m"
+echo -e "\e[1;33mYellow\e[0m"
+echo -e "\e[37mLight Gray\e[0m"
+echo -e "\e[1;37mWhite\e[0m"
+sleep 2
+echo "cargando"
+sleep 1
+
+echo -e "\e[31minstalando de Fuentes de la carpeta figlet\e[0m"
+sleep 1
+pkg install figlet
+npm install figlet
+apt install cmatrix
+echo -e "\e[31mBien, ya se instalaron los paquetes, para que los puedas usar en tu banner y debes probar cual te gusta mas, aqui abajo te dejo algunos ejemplos, el que me gusta es el big, para poner el big pongo ese comando y al final lo que quiero que diga, por ejemplo figlet -f big theholders y ya \e[0m"
+echo "                                            
+figlet -f digital
+figlet -f smslant
+figlet -f slant                                   
+figlet -f lant                                    
+figlet -f big"
